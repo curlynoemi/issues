@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+* {
+  margin: 0;
+  font-family: Poppins;
+}
+header {
+  min-height: 350px;
+  background: url(IMG/productivity.jpg) no-repeat center;
+  background-size: cover;
+}
+h1 {
+  margin-top: 50px;
+  line-height: 1.25;
+}
+a {
+  color: #000;
+  font-style: none;
+  text-decoration: none;
+}
+a:hover {
+  color: #7b7b7b;
+  text-decoration: none;
+}
+button {
+  color: #000;
+  padding: 10px;
+  border-radius: 50px;
+  background: transparent;
+  border: #000 solid 2px;
+}
+button:hover {
+  color: #000;
+  background: #fff;
+  border: #fff solid 2px;
+}
+#whatsapp {
+  color: #fff;
+  padding: 10px;
+  background: #3edd5a;
+  border-radius: 100%;
+}
+/*---------- NUMBERS ----------*/
+.numbers {
+  box-sizing: border-box;
+  padding: 30px;
+}
+.col {
+  float: left;
+  width: 33%;
+  padding: 10px;
+  text-align: center;
+}
