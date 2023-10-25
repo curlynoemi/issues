@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Code to SVG File Converter</title>
+</head>
+<body>
+    <h1>SVG Code to SVG File Converter</h1>
+    <form id="svgForm">
+        <textarea id="svgCode" rows="10" cols="50" required></textarea><br>
+        <button type="submit">Convert and Download</button>
+    </form>
+
+    <script>
+        document.getElementById('svgForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const svgCode = document.getElementById('svgCode').value;
+            const blob = new Blob([svgCode], { type: 'image/svg+xml' });
+            const link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = 'converted.svg';
+            link.click();
+        });
+    </script>
+</body>
+</html>
